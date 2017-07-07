@@ -17,7 +17,8 @@ import {
   ConditionalRender,
   MultipleComponents,
   NestedRoutes,
-  RedirectComponent
+  RedirectComponent,
+  Intercept
 } from './routes';
 
 const Links = () => (
@@ -31,6 +32,7 @@ const Links = () => (
     <NavLink to="/multiple-components">Multiple Components</NavLink>
     <NavLink to="/nested-routes">Nested Routes</NavLink>
     <NavLink to="/redirect-page">Redirect page</NavLink>
+    <NavLink to="/intercept">Intercept</NavLink>
   </nav>
 )
 
@@ -47,6 +49,7 @@ const App = () => (
       <Route path='/multiple-components' render={() => <MultipleComponents />} />
       <Route path='/nested-routes' render={() => <NestedRoutes />} />
       <Route path='/redirect-page' render={() => <RedirectComponent />} />
+      <Route path='/intercept' render={() => <Intercept />} />
     </div>
   </Router>
 );
