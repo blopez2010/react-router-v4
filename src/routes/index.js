@@ -5,3 +5,5 @@ export { Regex } from './regex';
 export { SwitchComponent } from './switchComponent';
 export { ConditionalRender } from './conditionalRender';
 export { MultipleComponents } from './multipleComponents';
+export { NestedRoutes } from './nestedRoutes';
+export { RedirectComponent } from './redirect';
